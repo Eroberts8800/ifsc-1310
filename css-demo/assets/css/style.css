@@ -1,0 +1,24 @@
+/*----- Style for css-demo -----*/
+
+/*---- Box Sizing ----*/
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/*------------Global Stylers-------------*/
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    color-scheme:  ;
+}
+
+header{
+
+}
