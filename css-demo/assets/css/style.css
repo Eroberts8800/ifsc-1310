@@ -14,7 +14,7 @@ html {
 /*---- Responsive Images ----*/
 
 img{
-  max-width:100px;
+  max-width:300px;
   height:auto;
 }
 
@@ -26,15 +26,38 @@ img{
 
 }
 
+.img-right{
+  float:right;
+  margin:10px 0 10 20;
+  border:5px solid #000000;
+  padding:5px;
+}
+
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0;
+  border:5px solid #000000;
+  padding:5px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border:5px solid #000000;
+  padding:5px;
+  
+}
 /*------------Global Stylers-------------*/
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin:0;
+    background-image:url("../img/code.jpg");
+   
 }
 
 header.primary{
-  background-color: blueviolet;
+  background-color: rgb(78, 67, 88);
   text-align: center;
   padding:40px;
   /* long form*/
@@ -72,7 +95,7 @@ header.primary nav{
 
 header.primary nav ul{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   padding:0;
 }
@@ -98,7 +121,7 @@ header.primary nav ul li a:hover{
 }
 
 #intro{
-  border-bottom:1px dotted #00000;
+  border-bottom:1px dotted #000000;
   padding-bottom:14px;
 }
 
@@ -160,7 +183,24 @@ aside .container{
   gap:40px;
 }
 
+aside .container a:last-of-type{
+  color: red;
+  font-size:.9rem;
+  margin-top:10px;
+  display:block;
+  text-align: right;
+}
 
+aside footer{
+  display:none;
+}
+
+#colophon{
+  background-color: gray;
+  padding:10px;
+  color:aqua;
+  text-align: center;
+}
 /*------------ Media Queries -------------*/
 
 @media screen and (max-width:600px){
@@ -175,5 +215,21 @@ aside .container{
       display:block;
       
     }
+    #content, aside.container{
+      flex-direction: column;
+
+    }
+    #content img{
+      display:block;
+      margin:auto;
+    }
+
+    #practice h2{
+      color:aqua;
+      border-bottom: 1px solid #000000 ;
+    }
+
+
+    
 
 }
