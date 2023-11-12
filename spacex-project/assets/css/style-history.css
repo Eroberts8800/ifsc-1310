@@ -48,9 +48,19 @@ header.primary nav ul :hover {
   color: #3498db; 
 }
 
+header.title{
+  border:5px solid; 
+  text-align: center;
+}
+
 section {
   text-align: center;
-  margin: 15px 20px;
+  width: 100%;
+}
+
+section p{
+  color:aliceblue;
+  font-size: 1.3rem;
 }
 
 table {
@@ -78,4 +88,5 @@ table th {
 footer.primary {
   margin-top: auto;
   text-align: center;
+  font-size: 1.4rem;
 }

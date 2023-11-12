@@ -50,27 +50,30 @@ header.primary nav ul :hover {
   color: #3498db; 
 }
 
-section.overview,
-section.configurations,
-section.crew,
-section.lab {
-  text-align: center;
-  margin: 20px 30px;
+header.title{
   border:5px solid; 
+  text-align: center;
+}
+section {
+  width: 100%;
 }
 
-article.a,
-article.b,
-article.pwn,
-article.cu,
-article.fl,
-article.fr {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+section p{
+  color:aliceblue;
+  font-size: 1.3rem;
 }
 
 footer.primary {
   margin-top: auto;
   text-align: center;
+  font-size: 1.3rem;
+}
+
+footer.primary:hover {
+  color: #3498db; 
+}
+
+footer.primary:active {
+  color:aliceblue;
+  font-size: 1.4rem;
 }
