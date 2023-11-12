@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(20, 75, 122);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header.primary {
+  background-image: url(../img/spacex-logo.png);
+  text-align: center;
+  height:250px;
+  background-color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+header.primary nav {
+  background-color: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header.primary nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  transition: color 0.3s ease; 
+}
+
+header.primary nav ul :hover {
+  color: #3498db; 
+}
+
+section.overview,
+section.configurations,
+section.crew,
+section.lab {
+  text-align: center;
+  margin: 20px 30px;
+  border:5px solid; 
+}
+
+article.a,
+article.b,
+article.pwn,
+article.cu,
+article.fl,
+article.fr {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+footer.primary {
+  margin-top: auto;
+  text-align: center;
+}
