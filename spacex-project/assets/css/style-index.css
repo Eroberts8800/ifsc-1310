@@ -1,21 +1,15 @@
-html {
+html, body {
   box-sizing: border-box;
   height: 100%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0;
   margin: 0;
-  height: 100%;
+  padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(0, 0, 0);
   color: rgb(20, 75, 122);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 main {
@@ -27,7 +21,7 @@ main {
 header.primary {
   background-image: url(../img/spacex-logo.png);
   text-align: center;
-  height:250px;
+  height: 250px;
   background-color: rgb(0, 0, 0);
   padding-top: 20px;
 }
@@ -43,37 +37,88 @@ header.primary nav ul {
   justify-content: space-around;
   padding: 0;
   list-style: none;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 header.primary nav ul :hover {
-  color: #3498db; 
+  color: #3498db;
 }
 
-section.overview,
-section.configurations,
-section.cargo,
-section.crew,
-section.lab {
+section.content {
   text-align: center;
-  margin: 20px 30px;
-  border:5px solid; 
+  margin: 20px;
+  border: 5px solid;
 }
 
-section p{
-  color:aliceblue;
+section p {
+  color: aliceblue;
   font-size: 1.3rem;
 }
 
-article.a,
-article.b,
-article.pwn,
-article.cu,
-article.fl,
-article.fr {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+article h1 {
+  font-size: 1.5rem;
+}
+
+article h3 {
+  font-size: 1.4rem;
+}
+
+article.overview {
+  margin: 20px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+}
+
+article.configurations {
+  text-align: center;
+  margin: 20px;
+  border-bottom: 5px solid;
+  font-size: 1.5rem;
+}
+
+header h2{
+  border-bottom:3px solid;
+  font-size: 2.0rem;
+  margin:auto;
+}
+article.cargo {
+  text-align: center;
+  padding-top:20px;
+  margin: 30px;
+}
+
+article.cargo img {
+  max-width: 100%;
+  float: left; 
+  margin:30px;
+}
+
+article.crew {
+  text-align: center;
+  margin: 30px;
+  padding-top:20px;
+  clear:both;
+}
+
+article.crew img{
+  max-width: 100%;
+  float: right; 
+  margin:30px;
+}
+
+article.lab {
+  text-align: center;
+  margin: 30px;
+  padding-top:20px;
+  clear:both;
+}
+
+article.lab img{
+  max-width: 100%;
+  float: left; 
+  margin:30px;
 }
 
 footer.primary {

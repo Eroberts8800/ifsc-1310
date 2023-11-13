@@ -49,8 +49,12 @@ header.primary nav ul :hover {
 }
 
 header.title{
-  border:5px solid; 
-  text-align: center;
+  border-bottom:3px solid;
+  font-size: 2.0rem;
+  margin-left:200px;
+  margin-right:200px;
+  margin-bottom:30px;
+  text-align:center;
 }
 
 section {
