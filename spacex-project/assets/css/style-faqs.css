@@ -1,21 +1,24 @@
-html {
+body {
   box-sizing: border-box;
   height: 100%;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0;
   margin: 0;
-  height: 100%;
+  padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(0, 0, 0);
   color: rgb(20, 75, 122);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header img{
+  max-width:600px;
+  height:auto;
+}
+
+.link{
+  color: aliceblue;
 }
 
 main {
@@ -24,60 +27,84 @@ main {
   min-height: 100%;
 }
 
-header.primary {
-  background-image: url(../img/spacex-logo.png);
+header.title {
+  background-image: url(../img/galaxy.jpg);
   text-align: center;
-  height:250px;
-  background-color: rgb(0, 0, 0);
+  position:fixed;
+  width: 100%;
+  height: 250px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
 }
 
-header.primary nav {
+header.title h1{
+  text-align: center;
+  background-color: black;
+}
+
+header.title nav {
   background-color: none;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-header.primary nav ul {
+header.title nav ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
   list-style: none;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
-header.primary nav ul :hover {
-  color: #3498db; 
+header.title nav ul li{
+  background-color: black;
 }
 
-header.title{
-  border-bottom:3px solid;
+header.title nav ul li a:hover {
+  color: #3498db;
+}
+
+header.FAQ {
+  text-align: center;
+  padding-top:300px;
+  margin-bottom: 100px;
+}
+
+header h2 {
+  border-bottom: 3px solid;
   font-size: 2.0rem;
-  margin-left:200px;
-  margin-right:200px;
-  margin-bottom:30px;
-  text-align:center;
-}
-section {
-  width: 100%;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-section p{
-  color:aliceblue;
+article.container {
+  text-align: center;
+  margin: 10px 100px 100px 100px;
+}
+
+section h2 {
+  border-bottom: 3px solid;
+  font-size: 1.5rem;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+section p {
+  color: aliceblue;
   font-size: 1.3rem;
 }
 
 footer.primary {
+  background-image: url(../img/galaxy.jpg);
   margin-top: auto;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  height:100px;
 }
 
-footer.primary:hover {
-  color: #3498db; 
-}
-
-footer.primary:active {
-  color:aliceblue;
-  font-size: 1.4rem;
+footer.primary :hover{
+  color: #3498db;
 }
