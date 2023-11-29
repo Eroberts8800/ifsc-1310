@@ -119,6 +119,7 @@ article.cargo {
   text-align: center;
   padding-top:20px;
   margin: 30px;
+  clear:both;
 }
 
 article.cargo img {
